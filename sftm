@@ -1,0 +1,33 @@
+#!/bin/env bash
+
+Display_usage(){
+    echo "Usage: $0 -add|-check <todo-name> <file>"
+}
+
+if [ "$#" -lt 3 ]; then
+    Display_usage
+    exit 1
+fi
+
+Switch=$1
+TodoName=$2
+File=$3
+
+if [ ! -s "$File" ]; then
+    echo "File '$File' not found."
+    exit 1
+fi
+
+case $Switch in
+    -add* )
+        echo "[] - $TodoName" >> "$File" ;;
+    -check* )
+        TodoNameEscaped=$(sed 's/[^^]/[&]/g; s/\^/\\^/g' <<< "$TodoName")
+        sed -i "/^\[\] - $TodoNameEscaped/s/^\[\]/[X]/" "$File" ;;
+    -remove* )
+        TodoNameEscaped=$(sed 's/[^^]/[&]/g; s/\^/\\^/g' <<< "$TodoName")
+        sed -i "/^\[X\] - $TodoNameEscaped/d" "$File" ;;
+    * )
+        Display_usage
+        exit 1 ;;
+esac
