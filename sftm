@@ -1,4 +1,45 @@
 #!/bin/env bash
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#                   -- [ SuprFTM ] --                       #  
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Software Name: SuprFTM
+# Version: 1.0.0
+# Authors: Aeternusdio.
+# [ Edited with Vim. ]
+# Date Written: Friday June 21, 2024
+#
+# Description:
+#    (SUPER. FAST. TODO. MANAGER) A fast, simple todo manager written in bashand apart of the QUAKTECH DSS Software Suite
+#
+# License: QUAKTECH License V2 & MIT (Dual Licensed)
+# Website: No Wesbite.
+# Contact: No Contact.
+#
+# Dependencies:
+# - BASH
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+#
+# The MIT License (MIT)
+#
+# Copyright (c) 2024 QUAKTECH
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# SUPRFTM IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 Display_usage(){
     echo "Usage: $0 -add|-check <todo-name> <file>"
